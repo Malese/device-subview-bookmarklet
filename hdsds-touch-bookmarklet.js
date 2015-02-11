@@ -1,7 +1,8 @@
 (function( d, w, undefined) {
 
-  // Configuration. Define your key-value pair
-  var match  = 'subview=mobile';
+  // Configuration.
+  var myParam  = 'mobile=1', // Define your get param key-value pair
+      myHosts = [ 'www.hd.se', 'www.sydsvenskan.se' ]; // Define your host
 
   // Internals
   var proto  = d.location.protocol,
@@ -10,12 +11,12 @@
       search = d.location.search,
       hash   = d.location.hash;
 
-  if ( ( host.indexOf( 'hd.se' ) !== -1 ) && ( search.indexOf( match ) === -1 ) ) {
+  if ( ( myHosts.indexOf( host ) !== -1 ) && ( search.indexOf( myParam ) === -1 ) ) {
 
     search  = search === '?' ? '' : search;  // If contains only '?', remove it. 
     search += search.length > 0 ? '&' : '?'; // Respect other GET-params.
     search  = search.replace( '&&', '&' );   // After above line, we could be left with '&&' (doubble ampersand).
-    search += match;
+    search += myParam;
 
     window.location.href = proto + '//' + host + path + search + hash;
 

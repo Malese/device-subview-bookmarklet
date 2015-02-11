@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hd.se subview switchers</title>
+  <style type="text/css">
+    body { max-width: 36em; margin: 2em auto 0; font-family: sans-serif; }
+    li > a { display: inline-block; padding: 0.2em 0.4em; background-color: #eee; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+  <h1>Subview bookmarklets</h1>
+
+  <h3>www.hd.se and www.sydsvenskan.se</h3>
+
+  <p>This bookmarklet lets you switch to the mobile subview on www.hd.se and www.sydsvenskan.se.</p>
+
+  <p>Drag the links to the bookmark-toolbar or similar and use when on www.hd.se, www.sydsvenskan.se. Maybe we can fix qa stage and test aswell.</p>
+
+  <ul>
+    <li> Mobile 
+      <a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://hd.se/static/device-subview-bookmarklet/hdsds-touch-bookmarklet.js'); document.body.appendChild(jsCode); }());">M</a>
+    </li>
+  </ul>
+
+
+  <h3>escenic.hd.se</h3>
+
+  <p>These bookmarklets lets you switch to the mobile and touch subviews on escenic.hd.se. (They are: desktop, touch and mobile)</p>
+
+  <ul>
+    <li> Touch 
+      <a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://hd.se/static/device-subview-bookmarklet/hd-touch-bookmarklet.js'); document.body.appendChild(jsCode); }());">T</a>
+    </li>
+
+    <li> Mobile (lo-fi)
+      <a href="javascript: (function () { var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://hd.se/static/device-subview-bookmarklet/hd-mobile-bookmarklet.js'); document.body.appendChild(jsCode); }());">M</a>
+    </li>
+  </ul>
+
+  <p>Looking for Desktop (D)? Use backbutton, klick a link or just erase the GET-param.
+
+  <p>Feedback to Martin L</p>
+
+
+</body>
+</html>
