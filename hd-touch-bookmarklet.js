@@ -2,7 +2,7 @@
 
   // Configuration.
   var param  = 'subview=mobile', // Define your get param key-value pair
-      myhost = 'hd.se'; // Define your host
+      myhost = [ 'hd.se' ]; // Define your host
 
   // Internals
   var proto  = d.location.protocol,
@@ -11,7 +11,7 @@
       search = d.location.search,
       hash   = d.location.hash;
 
-  if ( ( host.indexOf( myhost ) !== -1 ) && ( search.indexOf( myParam ) === -1 ) ) {
+  if ( ( myHosts.indexOf( host ) !== -1 ) && ( search.indexOf( myParam ) === -1 ) ) {
 
     search  = search.replace( 'subview=mobile', '' ); // Remove mobile param if that was previously used.
     search  = search.replace( '?&', '?' );   // After above line, we could be left with '?&' (empty GET-param).
