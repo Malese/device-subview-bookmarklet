@@ -1,4 +1,4 @@
-(function( d, w, undefined) {
+(function( w, undefined) {
 
   // Configuration.
   var myParam  = 'mobile=1', // Define your get param key-value pair
@@ -26,11 +26,11 @@
       ];
 
   // Internals
-  var proto  = d.location.protocol,
-      host   = d.location.host,
-      path   = d.location.pathname,
-      search = d.location.search,
-      hash   = d.location.hash;
+  var proto  = w.location.protocol,
+      host   = w.location.host,
+      path   = w.location.pathname,
+      search = w.location.search,
+      hash   = w.location.hash;
 
   if ( ( myHosts.indexOf( host ) !== -1 ) && ( search.indexOf( myParam ) === -1 ) ) {
 
@@ -39,8 +39,8 @@
     search  = search.replace( '&&', '&' );   // After above line, we could be left with '&&' (doubble ampersand).
     search += myParam;
 
-    window.location.href = proto + '//' + host + path + search + hash;
+    w.location.href = proto + '//' + host + path + search + hash;
 
   }
 
-}( document, window ));
+}( window ));
