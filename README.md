@@ -1,2 +1,2 @@
 # device-subview-bookmarklet
-Choose HD/SDS device-category by adding query-parameter to ulr.
+Switch to mobile view on HD/SDS domain by using the bookmarklet.
