@@ -22,7 +22,16 @@
         'sydsvenskan-www-qa.bonnierdigitalservices.se',
         'sydsvenskan-cms-qa.bonnierdigitalservices.se',
         'sydsvenskan-www-stage.bonnierdigitalservices.se',
-        'sydsvenskan-cms-stage.bonnierdigitalservices.se'
+        'sydsvenskan-cms-stage.bonnierdigitalservices.se',
+
+        'blogg.hd.se',
+        'blogg.sydsvenskan.se',
+        
+        'sds-bwp02.local',
+
+        '8till5.se',
+
+        'sds-apps.local'
       ];
 
   // Internals
