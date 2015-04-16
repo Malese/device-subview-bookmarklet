@@ -26,12 +26,16 @@
 
         'blogg.hd.se',
         'blogg.sydsvenskan.se',
-        
-        'sds-bwp02.local',
 
         '8till5.se',
 
-        'sds-apps.local'
+        'sds-apps.test.blog.bdop.se',
+        'sds-apps.stage.blog.bdop.se',
+        'sds-apps.local',
+
+        'sds-bwp02.test.blog.bdop.se',
+        'sds-bwp02.stage.blog.bdop.se',
+        'sds-bwp02.local'
       ];
 
   // Internals
